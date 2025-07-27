@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm p-4">
+      <header className="bg-white shadow-sm p-4 print:hidden">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold text-blue-600">
             {t('appTitle')}
@@ -59,7 +59,7 @@ function App() {
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto p-4">
+      <main className="max-w-4xl mx-auto p-4 print:p-0 print:max-w-none">
         {currentPage === 'config' ? (
           <ConfigForm 
             onGenerate={handleGenerateProblems}

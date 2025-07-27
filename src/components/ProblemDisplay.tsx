@@ -50,7 +50,7 @@ const ProblemDisplay: React.FC<ProblemDisplayProps> = ({
       </div>
 
       <div className="bg-white rounded-lg shadow-md p-6 print:shadow-none print:p-0">
-        <div className="text-center mb-6 print:mb-8">
+        <div className="text-center mb-6 print:hidden">
           <h2 className="text-2xl font-bold">{t('mathProblems')}</h2>
           <p className="text-gray-600 mt-2">
             {t('totalProblems')}: {problems.length}

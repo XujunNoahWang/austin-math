@@ -4,14 +4,15 @@
 
 @media print {
   @page {
-    margin: 0.5in;
-    size: A4;
+    margin: 0.4in;
+    size: auto;
   }
   
   body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-    font-size: 12px;
+    font-size: 11px;
+    background: white !important;
   }
   
   .print\:hidden {
@@ -27,7 +28,7 @@
   }
   
   .print\:gap-4 {
-    gap: 0.5rem !important;
+    gap: 0.3rem !important;
   }
   
   .print\:border-gray-400 {
@@ -35,36 +36,46 @@
   }
   
   .print\:mb-8 {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
   }
   
   .print\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
   
-  /* 打印时的题目框样式优化 */
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+  
+  .print\:max-w-none {
+    max-width: none !important;
+  }
+  
+  /* 打印时的题目框样式优化 - 更紧凑布局 */
   .print\:p-2 {
-    padding: 0.5rem !important;
+    padding: 0.3rem !important;
   }
   
   .print\:mb-2 {
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.3rem !important;
   }
   
   .print\:text-sm {
-    font-size: 0.875rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
   }
   
   .print\:text-base {
-    font-size: 1rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.2rem !important;
   }
   
   .print\:h-6 {
-    height: 1.5rem !important;
+    height: 1rem !important;
   }
   
   .print\:mb-1 {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0.15rem !important;
   }
 }
 
