@@ -17,7 +17,8 @@ const translations = {
     totalProblems: '总题数',
     back: '返回设置',
     regenerate: '再次生成',
-    print: '打印题目'
+    print: '打印题目',
+    savePDF: '保存PDF'
   },
   en: {
     appTitle: 'Austin Math - Math Practice',
@@ -35,7 +36,8 @@ const translations = {
     totalProblems: 'Total Problems',
     back: 'Back to Settings',
     regenerate: 'Generate Again',
-    print: 'Print Problems'
+    print: 'Print Problems',
+    savePDF: 'Save PDF'
   }
 };
 

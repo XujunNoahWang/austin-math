@@ -77,6 +77,19 @@
   .print\:mb-1 {
     margin-bottom: 0.15rem !important;
   }
+  
+  /* 移动端PDF模式优化 */
+  body.mobile-pdf-mode .print\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  body.mobile-pdf-mode .print\:gap-4 {
+    gap: 0.25rem !important;
+  }
+  
+  body.mobile-pdf-mode .print\:p-2 {
+    padding: 0.25rem !important;
+  }
 }
 
 .font-mono {

@@ -2,6 +2,7 @@ import React from 'react';
 import { MathProblem, ProblemConfig } from '../types';
 import ProblemGrid from './ProblemGrid';
 import { useTranslation } from '../utils/i18n';
+import { usePrintOrSave } from '../hooks/usePrintOrSave';
 
 interface ProblemDisplayProps {
   problems: MathProblem[];
@@ -19,10 +20,7 @@ const ProblemDisplay: React.FC<ProblemDisplayProps> = ({
   language 
 }) => {
   const t = useTranslation(language);
-
-  const handlePrint = () => {
-    window.print();
-  };
+  const { isMobile, handlePrintOrSave } = usePrintOrSave();
 
   return (
     <div>
@@ -41,10 +39,10 @@ const ProblemDisplay: React.FC<ProblemDisplayProps> = ({
             {t('regenerate')}
           </button>
           <button
-            onClick={handlePrint}
+            onClick={handlePrintOrSave}
             className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
           >
-            {t('print')}
+            {isMobile ? t('savePDF') : t('print')}
           </button>
         </div>
       </div>
