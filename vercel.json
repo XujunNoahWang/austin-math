@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "installCommand": "npm install",
   "build": {
     "env": {
       "GENERATE_SOURCEMAP": "false",
@@ -7,5 +10,15 @@
       "TSC_COMPILE_ON_ERROR": "true",
       "CI": "false"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
