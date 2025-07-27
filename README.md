@@ -1,5 +1,7 @@
 # Austin Math - 数学练习生成器
 
+🌐 **在线体验**: [https://austin-math.vercel.app/](https://austin-math.vercel.app/)
+
 [English](#english) | [中文](#中文)
 
 ---
@@ -27,9 +29,15 @@ Austin Math 是一个专为幼儿园儿童设计的数学练习题生成器。�
 
 ### 🚀 快速开始
 
-#### 前置要求
+#### 在线使用
 
-- Node.js (推荐 16.0 或更高版本)
+直接访问 [https://austin-math.vercel.app/](https://austin-math.vercel.app/) 即可立即使用，无需安装任何软件。
+
+#### 本地开发
+
+##### 前置要求
+
+- Node.js (推荐 22.x 或更高版本)
 - npm 或 yarn
 
 #### 安装步骤
@@ -68,7 +76,8 @@ npm run build
 - **前端框架**：React 18 + TypeScript
 - **样式**：Tailwind CSS
 - **构建工具**：Create React App
-- **部署**：支持 Vercel、Netlify 等静态部署平台
+- **部署**：Vercel（当前部署平台）
+- **在线地址**：[https://austin-math.vercel.app/](https://austin-math.vercel.app/)
 
 ### 📖 使用说明
 
@@ -151,9 +160,15 @@ Austin Math is a math problem generator designed specifically for kindergarten c
 
 ### 🚀 Quick Start
 
-#### Prerequisites
+#### Online Usage
 
-- Node.js (recommended 16.0 or higher)
+Visit [https://austin-math.vercel.app/](https://austin-math.vercel.app/) directly to use immediately without installing any software.
+
+#### Local Development
+
+##### Prerequisites
+
+- Node.js (recommended 22.x or higher)
 - npm or yarn
 
 #### Installation Steps
@@ -192,7 +207,8 @@ Built files will be generated in the `build` folder.
 - **Frontend Framework**: React 18 + TypeScript
 - **Styling**: Tailwind CSS
 - **Build Tool**: Create React App
-- **Deployment**: Supports Vercel, Netlify and other static deployment platforms
+- **Deployment**: Vercel (current deployment platform)
+- **Live Demo**: [https://austin-math.vercel.app/](https://austin-math.vercel.app/)
 
 ### 📖 Usage Instructions
 
